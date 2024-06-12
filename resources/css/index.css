@@ -1,0 +1,271 @@
+/*
+Colors for the website
+1. black #000000
+2. gold #FFD700
+3. ivory #FFFFF0 (complements the gold and black with a neutral color)
+4. green #006400 (represent growth and African land)
+5. red #8B0000 (symbolizing the bloodshed in the fight for independence)
+6. blue #00008B (representing the African skies and potential)
+
+Main Color: Gold
+Supporting Colors: Black, Ivory, Green, Red and Blue
+
+Background Color: Black
+Text: Ivory
+Headers and Borders: Gold
+
+Green, Red and Blue Usage
+They are accent colors and should be used for design elements like icons buttons and decorative patterns. They can be incorporated for graphic elements such as borders dividers and backgrounds for specific content boxes or callout sections
+
+Events Section: Green border
+Important Announcements: Red border
+Informational or resource section: Blue border
+
+Use traditional African patterns and motifs in these colors for backgrounds or decorative elements bledning them subtly with the black and gold theme
+
+Header Section:
+- Background: Black
+- Text: Ivory
+- Header Text: Gold
+- Border: Gold
+
+Content Section:
+- Background: Black
+- Main Text: Ivory
+- Section Headers: Gold
+- Icons/Buttons: Green, Red, Blue
+
+Event Section:
+- Background: Black
+- Header: Gold
+- Event Titles: Green
+- Important Dates: Red
+- Additional Info: Blue
+
+Decorative Patterns:
+- Use green, red, and blue in traditional African patterns around the borders or as part of the background design in a subtle way that does not overpower the main black and gold theme
+
+Visual Balance:
+- Ensure that green, red, and blue are used sparinglu to maintain the primary focus on the black and gold theme
+- Use these colors to draw attention to specific elements without overwheling the overall design.
+*/
+
+/*
+Text for the Website.
+
+Primary Font (for headers and titles)
+Montserrat - A modern, sans-serif font that is clean and highly legible. It adds a contemporary touch to you designs.
+
+Secondary Font (for body text)
+Open Sans - A versatile and readable sans-serif font, perfect for longer texts and maintaining readability across different sizes.
+
+Accent Font (for highlights and special sections)
+Ubuntu - A sans-serif font with a unique character, giving a distinct and friendly feel, which can be used for highlights or special sections.
+
+Cultural/Decorative Font (for decorative use or event names)
+Noto Sans
+
+Font Pairing Examples: 
+1. Headers/Titles: Montserrat
+2. Body Text: Open Sans
+3. Highlights/Special Sections: Ubuntu
+4. Cultural Decorative Elements: Noto Sans
+
+Implementation Tips:
+- Headers/Titles (Montserrat) : Use bold or extra-bold weights for emphasis
+- Body Text (Open Sans): Regular or light weights for paragrpahs, maintaining readability
+- Highlights (Ubuntu): Medium or bold weights for call-to-action elements or important highlights
+- Decorative Use (Noto Sans): Use sparingly for culutral authenticity in decorative elements or special event names
+*/
+
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Open Sans";
+    color: #FFFFF0;
+    text-align: center;
+}
+
+.highlights{
+    font-family: "Ubuntu";
+}
+
+.cultural{
+    font-family: "Noto Sans";
+}
+
+.events{
+    border: 1px solid #006400;
+}
+
+.events .eventsTitle{
+    color: #006400;
+}
+
+.events .importantDates{
+    color: #8B0000;
+}
+
+.events .additionalInfo{
+    color: #00008B;
+}
+
+.announcements{
+    border: 1px solid #8B0000;
+}
+
+.informational{
+    border: 1px solid #00008B;
+}
+
+button{
+    border: 1px solid #8B0000;
+    border-radius: 4px;
+}
+
+a{
+    color: #00008B;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #FFD700;
+    font-family: "Montserrat";
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.67rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.33rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.11rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 0.89rem;
+    font-weight: 500;
+}
+
+/*Page Design*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    height: 84px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -10;
+}
+
+main{
+    padding-top: 84px;
+}
+
+.logo{
+    display: inline-flex;
+    height: 84px;
+}
+
+.logo img{
+    height: 100%;
+    width: auto;
+}
+
+.nav{
+    display: inline-flex;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav li{
+    padding: 1rem; 
+}
+
+.nav a{
+    color: #FFFFF0;
+}
+
+.title{
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-top: 1px solid #FFD700;
+
+}
+
+.title img{
+    width: 100%;
+    height: auto;
+}
+
+.imageTiles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem;
+    width: 100%;
+}
+
+.imageTile{
+    display: inline-flex;
+    height: 90%;
+    width: 25%;
+    padding: 1rem;
+    overflow: hidden;
+    justify-items: center;
+    align-content: center;
+}
+
+.imageTile img{
+    height: auto;
+    width: 100%;
+}
+
+footer{
+    margin: 5px;
+    padding: 0.5rem;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/Footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.footer{
+    display: inline-flex;
+}
+
+.copyright{
+    display: inline-flex;
+}
