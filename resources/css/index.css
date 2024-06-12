@@ -173,13 +173,13 @@ body{
 }
 
 header{
-    position: fixed;
+    position: relative;
     display: flex;
     height: 84px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    z-index: -10;
+    z-index: 0;
 }
 
 main{
@@ -211,6 +211,7 @@ main{
 
 .nav a{
     color: #FFFFF0;
+    z-index: 0;
 }
 
 .title{
