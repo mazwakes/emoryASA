@@ -173,7 +173,6 @@ body{
 }
 
 header{
-    position: relative;
     display: flex;
     height: 84px;
     width: 100%;
