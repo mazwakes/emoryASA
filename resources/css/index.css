@@ -180,10 +180,6 @@ header{
     align-items: center;
 }
 
-main{
-    padding-top: 84px;
-}
-
 .logo{
     display: inline-flex;
     height: 84px;
