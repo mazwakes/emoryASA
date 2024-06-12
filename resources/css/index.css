@@ -217,8 +217,11 @@ main{
     display: flex;
     height: auto;
     width: 100%;
-    border-top: 1px solid #FFD700;
+}
 
+.headerBorder{
+    border-bottom: 1px solid #FFD700;
+    z-index: 10;
 }
 
 .title img{
